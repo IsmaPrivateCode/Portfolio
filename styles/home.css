@@ -17,8 +17,8 @@ nav{
 }
 #list1{
     display: flex;
--moz-box-align: center;
-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
 }
 
 #list1 ol{
@@ -26,17 +26,17 @@ align-items: center;
     justify-content: space-between;
     -moz-box-pack: justify;
     -moz-box-align: center;
-align-items: center;
-padding: 0px;
-margin: 0px;
-list-style: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
 
 #list1  ol li{
     margin: 0px 5px;
-position: relative;
-counter-increment: item 1;
-font-size: var(--fz-xs);
+    position: relative;
+    counter-increment: item 1;
+    font-size: var(--fz-xs);
 }
 
 #list1 ol li a{
@@ -47,6 +47,55 @@ font-size: var(--fz-xs);
     color: #7fffd4;
     font-size: var(--fz-xxs);
     content: "0" counter(item) ".";
+}
+
+
+
+.list2 {
+    position: fixed;
+    left: 40px;
+    bottom: 0px;
+   
+}
+
+.list2 ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    -moz-box-align: center;
+}
+
+.list2 ul li{
+    
+
+}
+
+.list2 ul li a{
+    padding: 10px;
+}
+
+.list2 ul li a svg{
+    height: 20px;
+    width: 20px;
+}
+
+.list2 ul::after{
+    content: "";
+    width: 1px;
+    height: 150px;
+    display: block;
+    background-color: #7fffd4;
+    margin: 0px auto;
+}
+
+main{
+    margin: 0px auto;
+}
+
+.content{
+    padding: 0px 150px;
 }
 
 a{
